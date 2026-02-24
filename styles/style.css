@@ -209,3 +209,81 @@ a:hover {
   }
  
 
+@media (max-width:1000px)
+{
+    body {  
+        color: #000000; /* Classic green color for the text */
+        border: 2px solid #33ff33;
+        background-color:lightyellow; /* Set black as background for the "hacky" appearance */
+        }
+     header section
+      {
+        display:grid;
+        justify-content:center; /* Separates items from each other in the x-axis. */
+        height: 30rem;
+        
+      }
+      
+    header section .image-container
+    {
+      display: flex;
+      justify-content: center; /* align horizontal */
+      align-items: center; /* Positions itself to the start of y-axis. */
+      /* Makes the image shape square. */
+      width: 15rem;
+      height: 15rem;
+    }
+    header section .image-container img
+    {            
+      /* Fits the image into the container div. */
+      width: 80%;
+      height: 80%;
+      border-radius: 50%; /* Rounds the image. */
+      object-fit: cover; /* Preserves the original aspect ratio. */
+      object-position: 100% 20%; /* Makes the face visible moving the image down. */
+    } 
+    /* -- MAIN - Technologies SECTION -- */
+    .technologies .container
+    {
+      display:contents;    
+      h3
+      {
+      font-size: 1rem; /* Sets a size that's between level-2 heading and the texts on the page for differentiation. */
+      }
+    }
+  /* Adjusts form elements to capture same look and feel. */
+  form input,
+  form textarea,
+  form select
+  {
+    padding: 0.1rem 0.2rem;
+    color: #000000;
+    border: 2px dotted #000000;
+    background-color: #ffffff;
+  }
+  a
+  {
+    color: rgb(48, 8, 251);
+    text-decoration: none;
+  }
+  /*Style to set the color and remove the lines below the visited link text */
+  a:visited
+  {
+    color: rgb(116, 52, 7);
+    text-decoration: none;
+  }
+  /*Style Highlights the background of the link text when the mouse pointer is placed over it */
+  a:hover {
+    background-color: rgb(15, 230, 180);
+    color: black;
+    }
+  form button
+  {
+    padding: 0.5rem 1rem;
+    color: #000000;
+    border: 2px solid #33ff33;
+    background-color: #ffffff;
+  }
+
+      
+}
