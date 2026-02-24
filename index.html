@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Digital CV</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <!--<link href="styles/style-select.css" rel="stylesheet" />-->
+</head>
+<body>
+    <!--The header section is used to display contact information and a photo of  the person-->
+    <!--Photo, full name, email, contact phone number -->
+    <header>
+        <section>
+            <div class="image-container">
+                <img src="images/foto.jpg"  alt="Foto Thais" id="img-prof">
+                
+            </div>
+            <div class="name-container">
+                <h1>Thais Sanchez</h1>
+            </div>
+            <div class="information-container">
+                <p>Email: <a href="sanchezthais@hotmail.com">sanchezthais@hotmail.com</a></p>
+                <p>Phone: (509) 333-9001</p>
+            </div>
+        </section>
+    </header>
+    <!--The main section is used to display content related to the main topics of a CV -->
+    <!--The sections are summary, education, and skills-->
+    <main>
+        <section class="table-cont" >
+            <h2>Summary</h2>
+            <p style="text-align:justify"  >Aspiring software developer with a strong background in web programming techniques. I am looking to join a team where I can leverage my technical skills, critical thinking, and adaptability to contribute to organizational growth and digital transformation.</p>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li><a href="https://www.springboard.com">Springboard</a> - Software Development (2026) </li>
+                <li><b>Columbia Basin College</b> - GED (2019) </li>
+            </ul>                       
+        </section>
+        <section class="technologies">
+            <h2>Tecnologies</h2>
+            <div class="container">
+                <div>
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML & CSS </li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>                
+                    </ul> 
+                </div>
+                <div>
+                    <h3>Database</h3>
+                    <ul>
+                        <li>SQL</li>                                             
+                    </ul> 
+                </div>
+                <div>
+                    <h3>Others</h3>
+                    <ul>
+                        <li>Command Line</li>
+                        <li>Git & GitHub</li> 
+                        <li>Object-Oriented Programming</li> 
+                        <li>Data Structures</li>                                                          
+                    </ul> 
+                </div>
+            </div>
+        </section>
+        
+          <!---Tools-->
+          <!---Enhancing Your Digital CV with a Table--->
+            <section class="tools">                       
+                <h2>Tools</h2>                   
+                    <!---Tools Table----------->                      
+                <div class="container">                      
+                    <table>                              
+                        <thead>
+                            <tr>
+                            <th >Tool</th>
+                            <th >Description</th>
+                            <th >Proficiency</th>
+                            </tr>
+                        </thead>
+                        <!---The table body is added,where the data 
+                        is displayed according to the data type in the header.--->
+                        <tbody>
+                            <tr>
+                            <td>VScode </td>
+                            <td>Integrated development environment (IDE) developed by Microsoft.</td>
+                            <td>Beginner</td>
+
+                            <tr>
+                            <td>Slack </td>
+                            <td>Slack is a cloud-based team communication platform developed by Slack Technologies.</td>
+                            <td>Beginner</td>
+
+                            <tr>
+                            <td>Zoom </td>
+                            <td>Zoom is an online communication platform with video conferencing.</td>
+                            <td>Intermediate</td>
+
+                            <tr>
+                            <td>Wordpress</td>
+                            <td>Is a web content management system. </td>
+                            <td>Intermediate</td>
+                        </tbody>            
+                    </table>  
+                </div>                                                       
+            </section>
+    </main>    
+    <footer>
+        <!---Contact form.--->
+        <section class="contact">
+            <br>
+            <h2>Contact Me</h2> 
+            <div class="form-container">
+                <form action="#">
+                    <!--input boxes: Name-->
+                    <div class="text-input-container">
+                        <label for="name">Name:</label>
+                        <input type="text"
+                        id="name"
+                        name="full-name"                        
+                        placeholder="Enter full name"
+                        class="input"
+                        required> 
+                    </div>
+                    <!-- input boxes: email-->  
+                    <br>
+                    <div class="text-input-container">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email"  name="user-email" required placeholder="Enter email" class="input">                        
+                    </div>
+                    <br>
+                    <!--input boxes: Orgatization-->                    
+                    <div class="text-input-container">
+                        <label for="organization">Orgatization:</label>
+                        <input type="text"
+                        id="organization"
+                        name="organization"
+                        class="input"
+                        placeholder="Enter Orgatization name">
+                                               
+                    </div>
+                    
+                    <!--input boxes: Role-->
+                    <div class="text-input-container">
+                        <br>
+                        <label for="role">Role:</label>
+                        <input type="text"
+                        name="role"
+                        id="role"
+                        class="input"
+                        placeholder="Enter Role name">                        
+                    </div>                    
+                    <!--Drop Down Menus Reason for Contact
+                        Select/option-->
+                    <br> 
+                    <div class="select-container">           
+                        <label for="reason">Reason:</label>
+                        <select id="reason" name="reason">
+                            <option value="">---Chose Reason---</option>
+                            <option value="off">Job Officer</option>
+                            <option value="sup">Job Supervisor</option>
+                            <option value="it">Job IT</option>  
+                        </select> 
+                    </div>    
+                    
+                    <br>    
+                    <!--input checkboxes
+                    When do you prefer to code-->  
+                    <div class="checkbox-container">
+                        <fieldset>             
+                            <legend>When do you prefer to code</legend>   
+                            <div class="checkboxes-container">
+                                <div>                              
+                                    <input type="checkbox"  id="early" name="preference" value="early"> 
+                                    <label for="early">Bright & Early &#127748</label><br>
+                                </div> 
+                                <div>                                    
+                                    <input type="checkbox"  id="afternoon" name="preference" value="afternoon"> 
+                                    <label for="afternoon">Sunny Afternoon &#127774</label><br>
+                                </div>
+                                <div>                                    
+                                    <input type="checkbox"  id="night" name="preference" value="night"> 
+                                    <label for="night">Night Owl &#127769</label><br>
+                                </div>
+                                <div>                                    
+                                    <input type="checkbox"  id="2am" name="preference" value="2am"> 
+                                    <label for="2am">2 AM (Why do I do this myself) &#128564 </label><br>              
+                                </div>
+                            </div>
+                        </fieldset> 
+                    </div>
+                    
+                    <br>
+                    <!--Larger text area-->
+                    <div class="text-input-container">
+                        <label>Message:</label>                
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            required 
+                            placeholder="Describe detail..."
+                            class="input">
+                        </textarea>
+                    </div>
+                    <br>
+                    <!--Submit and clear form data buttons-->
+                    <br>
+                    <div class="button-container">
+                        <button type="reset">Clear</button>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--The footer is separated by a line at the bottom of the page and can contain links to References consulted-->
+    
+       <!-- <hr>-->
+        <section>
+            <p> 
+                <h4><i>References consulted</i></h4>
+            </p>
+            <nav>
+            <ul><i>
+                <li><a href="https://www.springboard.com/">Springboard</a>: Course materials for Software Development</li>
+                <li><a href="https://developer.mozilla.org/en-US/"> Resources for Developers</a>  
+                <li><a href="https://en.wikipedia.org/wiki"> Wikipedia</a>   
+            </i></ul>   
+            </nav>         
+        </section>        
+    </footer>
+</body>
+</html>
